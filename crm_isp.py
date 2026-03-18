@@ -170,6 +170,7 @@ HTML = """
 <body>
 
 <h2>Login</h2>
+<p>Usuário: admin / Senha: admin123</p>
 <input id="u"><input id="p" type="password">
 <button onclick="login()">Entrar</button>
 
@@ -263,6 +264,13 @@ if __name__ == "__main__":
     create_frontend()
     _test()
     print("ISP PRO pronto para rodar.")
+
+    print("\nPassos para rodar localmente:")
+    print("1. Abra o terminal na pasta do projeto.")
+    print("2. Rode 'pip install -r requirements.txt' para instalar dependências.")
+    print("3. Execute 'python crm_isp.py'.")
+    print("4. Abra o navegador e acesse http://127.0.0.1:5000.")
+    print("5. Login inicial: Usuário: admin / Senha: admin123\n")
 
     # Para evitar erro em sandbox, só executa Flask se não estiver no ambiente restrito
     try:
